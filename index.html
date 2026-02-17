@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="burger-menu">
+        <ul class="burger-list">
+            <li><a href="#1">1</a></li>
+            <li><a href="#2">2</a></li>
+            <li><a href="#3">3</a></li>
+            <li><a href="#4">4</a></li>
+            <li><a href="#5">5</a></li>
+            <li><a href="#6">6</a></li>
+            <li><a href="#7">7</a></li>
+            <li><a href="#8">8</a></li>
+            <li><a href="#9">9</a></li>
+            <li><a href="#10">10</a></li>
+            <li><a href="#11">11</a></li>
+            <li><a href="#12">12</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Лабораторна робота №1</h1>
+        
+        <section id="1" class="lab-section">
+            <h2>Секція 1: Теги тексту</h2>
+            <p class="description">Теги заголовків (h1-h6) структурують контент, p створює абзаци, а strong та em використовуються для логічного наголосу.</p>
+            
+            <div class="demo-box">
+                <h3>Заголовок 3-го рівня</h3>
+                <p>Це абзац тексту з <strong>важливим фрагментом</strong> та <em>курсивом</em>.<br>А це новий рядок.</p>
+            </div>
+            
+            <div class="code-block">
+<pre><code>&lt;h3&gt;Заголовок 3-го рівня&lt;/h3&gt;
+&lt;p&gt;Це абзац з &lt;strong&gt;жирним&lt;/strong&gt; та &lt;em&gt;курсивом&lt;/em&gt;.&lt;br&gt;Новий рядок.&lt;/p&gt;</code></pre>
+            </div>
+        </section>
+
+        <section id="2" class="lab-section">
+            <h2>Секція 2: Списки</h2>
+            <p class="description">Марковані (ul) та нумеровані (ol) списки використовуються для переліку елементів (li).</p>
+            
+            <div class="demo-box">
+                <ul>
+                    <li>Елемент маркованого списку</li>
+                    <li>Ще один елемент</li>
+                </ul>
+                <ol>
+                    <li>Перший пункт</li>
+                    <li>Другий пункт</li>
+                </ol>
+            </div>
+
+            <div class="code-block">
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Маркований&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;Нумерований&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </div>
+        </section>
+
+        <section id="3" class="lab-section">
+            <h2>Секція 3: Посилання та зображення</h2>
+            <p class="description">Тег 'a' створює гіперпосилання, а 'img' вбудовує зображення. Атрибут alt важливий для доступності.</p>
+            
+            <div class="demo-box">
+                <a href="https://google.com" target="_blank" style="color: cyan;">Пошук Google (target="_blank")</a>
+                <br><br>
+                <img src="https://placehold.co/150x100" alt="Плейсхолдер зображення">
+            </div>
+
+            <div class="code-block">
+<pre><code>&lt;a href="https://google.com" target="_blank"&gt;Google&lt;/a&gt;
+&lt;img src="..." alt="Опис зображення"&gt;</code></pre>
+            </div>
+        </section>
+
+        <section id="4" class="lab-section">
+            <h2>Секція 4: Таблиці</h2>
+            <p class="description">Таблиці структурують дані за допомогою рядків (tr) та комірок (td, th).</p>
+            
+            <div class="demo-box">
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <th>Ім'я</th>
+                        <th>Роль</th>
+                    </tr>
+                    <tr>
+                        <td>Іван</td>
+                        <td>Студент</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="code-block">
+<pre><code>&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Ім'я&lt;/th&gt;&lt;th&gt;Роль&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Іван&lt;/td&gt;&lt;td&gt;Студент&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+        </section>
+
+        <section id="5" class="lab-section">
+            <h2>Секція 5: Форми</h2>
+            <p class="description">Форми дозволяють користувачам вводити дані (input) та відправляти їх (button).</p>
+            
+            <div class="demo-box">
+                <form onsubmit="event.preventDefault(); alert('Відправлено!');">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="name@example.com">
+                    <button type="submit">Надіслати</button>
+                </form>
+            </div>
+
+            <div class="code-block">
+<pre><code>&lt;form&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email"&gt;
+  &lt;button&gt;Надіслати&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+        </section>
+
+        <section id="6" class="lab-section">
+            <h2>Секція 6: Box Model</h2>
+            <p class="description">Кожен елемент — це прямокутник, який має відступи (margin), межі (border) та внутрішні відступи (padding).</p>
+            
+            <div class="demo-box">
+                <div class="box-model-example">Контент (Box Model)</div>
+            </div>
+
+            <div class="code-block">
+<pre><code>.box {
+  margin: 20px;   /* Зовнішній відступ */
+  border: 5px solid yellow; /* Межа */
+  padding: 15px;  /* Внутрішній відступ */
+}</code></pre>
+            </div>
+        </section>
+
+        <section id="7" class="lab-section">
+            <h2>Секція 7: Typography</h2>
+            <p class="description">CSS дозволяє керувати розміром (font-size), жирністю (font-weight) та міжрядковим інтервалом (line-height).</p>
+            
+            <div class="demo-box">
+                <p class="typography-example">Цей текст має змінену типографіку.</p>
+            </div>
+
+            <div class="code-block">
+<pre><code>.text {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}</code></pre>
+            </div>
+        </section>
+
+        <section id="8" class="lab-section">
+            <h2>Секція 8: Colors & Background</h2>
+            <p class="description">Властивості color та background-color задають кольори тексту та фону.</p>
+            
+            <div class="demo-box">
+                <div class="color-example">Білий текст на градієнтному фоні</div>
+            </div>
+
+            <div class="code-block">
+<pre><code>.element {
+  color: white;
+  background: linear-gradient(to right, tomato, gold);
+}</code></pre>
+            </div>
+        </section>
+
+        <section id="9" class="lab-section">
+            <h2>Секція 9: Layout (Flexbox)</h2>
+            <p class="description">Flexbox — це модель макету для розподілу простору між елементами в контейнері.</p>
+            
+            <div class="demo-box">
+                <div class="flex-container">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                </div>
+            </div>
+
+            <div class="code-block">
+<pre><code>.container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}</code></pre>
+            </div>
+        </section>
+
+        <section id="10" class="lab-section">
+            <h2>Секція 10: Псевдокласи (:hover та :focus)</h2>
+            <p class="description">
+                :hover спрацьовує при наведенні курсору, а :focus — коли елемент обрано (наприклад, клік по полю вводу).
+            </p>
+            
+            <div class="demo-box">
+                <button class="hover-btn">Наведи на мене</button>
+                
+                <br><br>
+                
+                <input type="text" class="focus-input" placeholder="Ведіть текст...">
+            </div>
+
+            <div class="code-block">
+<pre><code>/* :hover для кнопки */
+.btn:hover {
+  background-color: white;
+}
+
+/* :focus для input */
+.input:focus {
+  border-color: #42f5aa;
+  outline: none;
+  background-color: #444;
+}</code></pre>
+            </div>
+        </section>
+
+        <section id="11" class="lab-section">
+            <h2>Секція 11: Маніпуляція DOM</h2>
+            <p class="description">JavaScript дозволяє динамічно змінювати контент сторінки. Натисніть кнопку, щоб додати текст.</p>
+            
+            <div class="demo-box">
+                <button id="addTextBtn">Додати текст</button>
+                <div id="outputContainer" style="margin-top: 10px;"></div>
+            </div>
+
+            <div class="code-block">
+<pre><code>btn.onclick = function() {
+  div.textContent = "Новий текст додано!";
+}</code></pre>
+            </div>
+        </section>
+
+        <section id="12" class="lab-section">
+            <h2>Секція 12: Події (Зміна теми)</h2>
+            <p class="description">JS може змінювати класи CSS "на льоту". Кнопка нижче перемикає світлу тему для цієї секції.</p>
+            
+            <div class="demo-box" id="themeBox">
+                <p>Поточний стиль контейнера.</p>
+                <button id="themeToggleBtn">Перемкнути тему</button>
+            </div>
+
+            <div class="code-block">
+<pre><code>btn.onclick = function() {
+  element.classList.toggle("light-theme");
+}</code></pre>
+            </div>
+        </section>
+        
+        <br><br><br>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

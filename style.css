@@ -1,0 +1,173 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.burger-menu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #42d4f5, #42f5aa);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.burger-list {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.burger-list li {
+    font-size: 1.2rem;
+    width: 60px;
+    margin: 0 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 10px;
+    transition: .1s ease all;
+}
+
+.burger-list li:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.burger-list li a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.lab-section {
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #42f5aa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.description {
+    font-style: italic;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.demo-box {
+    background-color: #555;
+    padding: 20px;
+    border: 1px dashed #aaa;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.code-block {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: monospace;
+    border: 1px solid #444;
+}
+
+.box-model-example {
+    background-color: #2a2a2a;
+    width: fit-content;
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid #42d4f5;
+    color: white;
+}
+
+.typography-example {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.8;
+    font-family: 'Georgia', serif;
+}
+
+.color-example {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    border-radius: 5px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    background-color: #666;
+    padding: 10px;
+}
+
+.flex-item {
+    background-color: #42f5aa;
+    color: #333;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.hover-btn {
+    padding: 10px 20px;
+    background-color: #42d4f5;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.hover-btn:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.light-theme {
+    background-color: #f0f0f0 !important; /* Перебиваємо темний фон */
+    color: #333 !important;
+    border: 1px solid #ccc;
+}
+
+.focus-input {
+    padding: 10px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #333;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 200px;
+}
+
+.focus-input:focus {
+    border-color: #42f5aa;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(66, 245, 170, 0.5);
+}
