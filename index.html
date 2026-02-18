@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="burger-menu">
-        <ul class="burger-list">
-            <li><a href="#1">1</a></li>
-            <li><a href="#2">2</a></li>
-            <li><a href="#3">3</a></li>
-            <li><a href="#4">4</a></li>
-            <li><a href="#5">5</a></li>
-            <li><a href="#6">6</a></li>
-            <li><a href="#7">7</a></li>
-            <li><a href="#8">8</a></li>
-            <li><a href="#9">9</a></li>
-            <li><a href="#10">10</a></li>
-            <li><a href="#11">11</a></li>
-            <li><a href="#12">12</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <nav class="burger-menu">
+            <ul class="burger-list">
+                <li><a href="#1">1</a></li>
+                <li><a href="#2">2</a></li>
+                <li><a href="#3">3</a></li>
+                <li><a href="#4">4</a></li>
+                <li><a href="#5">5</a></li>
+                <li><a href="#6">6</a></li>
+                <li><a href="#7">7</a></li>
+                <li><a href="#8">8</a></li>
+                <li><a href="#9">9</a></li>
+                <li><a href="#10">10</a></li>
+                <li><a href="#11">11</a></li>
+                <li><a href="#12">12</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="container">
         <h1>Лабораторна робота №1</h1>
@@ -74,7 +76,7 @@
             <div class="demo-box">
                 <a href="https://google.com" target="_blank" style="color: cyan;">Пошук Google (target="_blank")</a>
                 <br><br>
-                <img src="https://placehold.co/150x100" alt="Плейсхолдер зображення">
+                <img src="https://m.media-amazon.com/images/I/71IFGsLL3vL._AC_UF894,1000_QL80_.jpg" alt="Зображення фортеці" style="max-width: 300px;">
             </div>
 
             <div class="code-block">
@@ -239,7 +241,7 @@
             </div>
 
             <div class="code-block">
-<pre><code>btn.onclick = function() {
+<pre><code>btn.onclick = () => {
   div.textContent = "Новий текст додано!";
 }</code></pre>
             </div>
@@ -255,7 +257,7 @@
             </div>
 
             <div class="code-block">
-<pre><code>btn.onclick = function() {
+<pre><code>btn.onclick = () => {
   element.classList.toggle("light-theme");
 }</code></pre>
             </div>

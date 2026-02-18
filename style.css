@@ -90,7 +90,6 @@ html, body {
     background-color: #222;
     padding: 10px;
     border-radius: 4px;
-    overflow-x: auto;
     font-family: monospace;
     border: 1px solid #444;
 }

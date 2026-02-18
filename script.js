@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addTextBtn = document.getElementById('addTextBtn');
     const outputContainer = document.getElementById('outputContainer');
 
-    addTextBtn.onclick = function() {
+    addTextBtn.onclick = () => {
         const newPara = document.createElement('p');
         newPara.textContent = "Цей текст додано за допомогою JavaScript (" + new Date().toLocaleTimeString() + ")";
         newPara.style.color = "#42f5aa";
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('themeToggleBtn');
     const themeBox = document.getElementById('themeBox');
 
-    themeToggleBtn.addEventListener('click', function() {
+    themeToggleBtn.addEventListener('click', () => {
         themeBox.classList.toggle('light-theme');
         
         if (themeBox.classList.contains('light-theme')) {
@@ -21,5 +21,4 @@ document.addEventListener('DOMContentLoaded', () => {
             themeToggleBtn.textContent = "Перемкнути на світлу";
         }
     });
-
 });
