@@ -16,7 +16,8 @@ html, body {
     background: linear-gradient(-45deg, #42d4f5, #42f5aa);
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 1000;  
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .burger-list {
@@ -57,6 +58,9 @@ html, body {
     max-width: 800px;
     margin: 80px auto;
     padding: 0 20px;
+    h1 {
+        color: #000;
+    }
 }
 
 .lab-section {
